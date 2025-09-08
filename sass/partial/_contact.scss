@@ -1,0 +1,111 @@
+@use '_mixin' as m;
+
+.contact {
+    padding-block: m.$section-padding;
+    position: relative;
+    @include m.tab {
+        padding-block: m.$section-padding;
+    }
+
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+
+        .line-btn {
+            display: inline-block;
+            width: fit-content;
+            margin: 0 auto;
+
+            .contact-btn {
+                padding: 5px 1%;
+            }
+        }
+    
+        .line-qr {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+            p {
+                width: 40%;
+                span {
+                    font-weight: bold;
+                }
+                @include m.tab {
+                    font-size: 0.85rem;
+                }
+            }
+            img {
+                width: 30%;
+                height: 30%;
+            }
+        }
+
+        .tel {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            gap: 20px;
+
+            .tel-text {
+                font-weight: bold;
+            }
+
+            a { 
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                width: fit-content;
+                margin: 0 auto;
+                background-color: m.$main-color;
+                border-radius: 50px;
+                padding: 10px 20px;
+                font-weight: bold;
+                border: 1px m.$line-color solid;
+                transition: .3s ease;
+
+                @include m.sp {
+                    font-size: 0.9rem;
+                }
+
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                    position: relative; // アイコンを重ねる
+            
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        transition: opacity .5s ease;
+                    }
+                    .black {
+                        opacity: 1;
+            
+                    }
+                    .white {
+                        opacity: 0;
+                    }
+                }
+                &:hover {
+                    background-color: m.$accent-color;
+                    color: #fff;
+                    .icon {
+                        .black {
+                            opacity: 0;
+                        }
+                        .white {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

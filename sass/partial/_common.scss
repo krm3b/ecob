@@ -1,0 +1,119 @@
+@use '_mixin' as m;
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+html {
+    background-color: m.$base-color;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 100%;
+    color: m.$font-color;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 2%;
+
+    @include m.tab {
+        padding-inline: 6%;
+    }
+
+
+}
+
+.center-wrap {
+    text-align: center;
+}
+
+.section-title {
+    color: m.$accent-color;
+    margin-bottom: 70px;
+}
+
+.explanation {
+    margin-bottom: 70px;
+    @include m.sp {
+        font-size: 0.85rem;
+    }
+}
+
+.line-btn {
+    text-align: center;
+    font-weight: bold;
+
+    .speech-bubble {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        position: relative;
+
+        p {
+            text-shadow: 0 1px 5px #fff;
+        }
+        img {
+            width: 50px;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 45%;
+            width: 20px;
+            height: 3px;
+            background-color: m.$font-color;
+            text-shadow: 0 1px 5px #fff;
+        }
+
+        &::before {
+            left: 30px;
+            transform: translateY(-50%) rotate(45deg);
+        }
+        &::after {
+            right: 30px;
+            transform: translateY(-50%) rotate(-45deg);
+        }
+    }
+    .btn-wrap {
+        text-align: center;
+        
+        .contact-btn {
+            display: block;
+            border-radius: 10px;
+            width: 290px;
+            background-color: m.$contact-color;
+            border: 4px m.$contact-color solid;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+            color: #fff;
+            transition: all .3s ease;
+            &:hover {
+                background-color: #fff;
+                color: m.$font-color;
+            }
+        }
+    }
+}

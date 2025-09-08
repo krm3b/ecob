@@ -1,0 +1,10 @@
+@use '_mixin' as m;
+
+.instagram {
+    padding-block: m.$section-padding;
+    background-color: #fff;
+
+    @include m.tab {
+        padding-block: m.$section-padding;
+    }
+}

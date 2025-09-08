@@ -1,0 +1,86 @@
+@use '_mixin' as m;
+
+.cargo {
+    background-color: m.$main-color;
+    padding-block: m.$section-padding;
+    @include m.tab {
+        padding-block: m.$section-padding;
+    }
+
+    &__grid {
+        background-color: #fff;
+        padding-block: 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        @include m.tab {
+            padding: 5% 3%;
+        }
+
+        &--item {
+            margin: 0 auto;
+            max-width: 700px;
+            width: 100%;
+            border: 1px m.$line-color solid;
+            
+            .item-title {
+                border-bottom: 1px m.$line-color solid;
+                padding: 10px 5%;
+                color: m.$accent-color;
+                background-color: m.$main-color;
+
+                @include m.sp {
+                    font-size: 0.95rem;
+                }
+            }
+
+            .item-list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px 5% 10px 10%;
+                li {
+                    position: relative;
+    
+                    @include m.sp {
+                        font-size: 0.9rem;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: -6%;
+                        transform: translateY(-50%);
+                        background-image: url(../../img/icon_Check.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        width: 20px;
+                        height: 20px;
+
+                        @include m.sp {
+                            left: -10%;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.triangle-wrapper {
+    background-color: #fff;
+
+    .triangle {
+        display:block;
+        width: 0;
+        height: 0;
+        margin: 0 auto;
+        line-height: 0;
+        border-left: 50vw solid transparent;
+        border-right: 50vw solid transparent;
+        border-top: 130px solid m.$main-color;
+    }
+}

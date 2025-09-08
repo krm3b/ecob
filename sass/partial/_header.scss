@@ -1,0 +1,228 @@
+@use '_mixin' as m;
+
+header {
+    height: m.$header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2%;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: transparent; // ←背景透過にする
+    
+
+    @include m.tab {
+        height: m.$sp-header-height;
+        padding-left: 1%;
+        padding-right: 0;
+    }
+
+    .ecob-logo {
+        a {
+            display: block;
+            height: 100%;
+            img {
+                width: 150px;
+                display: block;
+            }
+        }
+    }
+
+    .header-line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: m.$contact-color;
+        border: 4px m.$contact-color solid;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+        padding-block: 3px;
+        padding-inline: clamp(5px, 0.9vw, 20px);
+        border-radius: 10px;
+        color: #fff;
+        font-weight: bold;
+        transition: all .3s ease;
+        img {
+            width: clamp(20px, 5vw, 40px);
+            height: clamp(20px, 5vw, 40px);
+        }
+        &:hover {
+            background-color: #fff;
+            color: m.$font-color;
+        }
+    }
+
+    .sp-header {
+        position: relative;
+
+        .toggle-btn {
+            width: m.$sp-header-height;
+            height: m.$sp-header-height;
+            z-index: 100;
+            background-color: transparent;
+            position: relative;
+            cursor: pointer;
+            display: none;
+    
+            @include m.tab {
+                display: block;
+            }
+            span {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 4px;
+                width: 60%;
+                background-color: m.$accent-color;
+                transition: .5s ease;
+    
+                @include m.tab {
+                    height: 2px;
+                }
+    
+                &:nth-child(1) {
+                    top: 26%;
+                }
+                &:nth-child(2) {
+                    top: 48%;
+                }
+                &:nth-child(3) {
+                    top: 70%;
+                }
+            }
+        }
+            
+        .header-line {
+            display: none;
+            
+            @include m.tab {
+                display: flex;
+                position: fixed;
+                bottom: 1%;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 100;
+                font-size: 0.8rem;
+                width: 290px;
+                height: 50px;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+                z-index: 100;
+
+                &.is-show {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }   
+
+    nav {
+        height: 100%;
+        font-size: clamp(0.6rem, 1.4vw, 1rem);
+
+        @include m.tab {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: m.$sp-header-width;
+            height: 70vh;
+            font-size: 1.1rem;
+            background-color: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            transform: translateX(100%); // 初期は右の外に隠す
+            opacity: 0;
+            visibility: hidden;
+            transition: transform .3s ease, opacity .3s ease;
+            
+        }
+
+        .nav-list {
+            height: 100%;
+            display: flex;
+            gap: clamp(7px, 1.8vw, 25px);
+            align-items: center;
+
+            @include m.tab {
+                flex-direction: column;
+                justify-content: center;
+                gap: 40px;
+                height: 70vh;
+                background-color: rgba(255, 255, 255, 0.7);
+                padding: 20% 10%;
+            }
+
+            .page-jump {
+                position: relative;
+                display: inline-block;
+                text-shadow: 0 2px 2px #fff;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -3px;
+                    left: 0;
+                    height: 2px;
+                    width: 0;
+                    background-color: m.$accent-color;
+                    opacity: 0;
+                    transition: all .3s ease;
+                }
+                
+                &:hover::after {
+                    opacity: 1;
+                    width: 100%;
+                }
+                
+            }
+
+
+            .sns-icon {
+                transition: all .3s ease;
+                &:hover {
+                    opacity: 0.7;
+                }
+                img {
+                    width: clamp(30px, 5vw, 50px);
+                    height: clamp(30px, 5vw, 50px);
+                    @include m.tab {
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+            }
+
+            .header-line {
+                @include m.tab {
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+    &.open {
+        .toggle-btn {
+            span {
+                &:nth-child(1) {
+                    top: 50%;
+                    transform: translate(-50%, -50%) rotate(-315deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:nth-child(3) {
+                    top: 50%;
+                    transform: translate(-50%, -50%) rotate(315deg);
+                }
+            }
+        }
+        nav {
+            transform: translateX(0); // ← スライドイン
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+}

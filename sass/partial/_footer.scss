@@ -1,0 +1,111 @@
+@use '_mixin' as m;
+
+footer {
+    @include m.tab {
+        margin-bottom: 60px;
+    }
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        background-color: #fff;
+        color: m.$accent-color;
+        font-weight: bold;
+        font-size: clamp(1.5rem, 3vw, 2rem);
+
+        @include m.tab {
+            height: auto;
+            padding-block: 5%;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+        }
+
+        @include m.sp {
+            font-size: clamp(0.8rem, 3vw, 1rem);
+            
+        }
+    }
+
+    ul {
+        background-color: m.$main-color;
+        padding-block: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @include m.sp {
+            font-size: 0.85rem;
+            gap: 10px;
+        }
+        li {
+            a {
+                transition: .3s ease;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    .copy {
+        font-size: 0.7rem;
+        padding-block: 6px;
+    }
+
+
+    .back-to-top {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 70px;
+        height: 70px;
+        border: 3px m.$line-color solid;
+        background-color: #fff;
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0.8);
+        transition: all 0.3s ease;
+        z-index: 1000;
+
+        @include m.tab {
+            width: 40px;
+            height: 40px;
+        }
+
+        &.is-show {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+            pointer-events: auto;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -25%) rotate(-45deg);
+            right: 25%;
+            border-top: m.$line-color 3px solid;
+            border-right: m.$line-color 3px solid;
+            width: 15px;
+            height: 15px;
+            transition: all .3s ease;
+
+            @include m.tab {
+                right: 18%;
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        &:hover {
+            background-color: m.$line-color;
+
+            &::after {
+                border-top: #fff 3px solid;
+                border-right: #fff 3px solid;    
+            }
+        }
+    }
+}

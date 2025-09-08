@@ -1,0 +1,93 @@
+@use '_mixin' as m;
+
+.area {
+    padding-block: m.$section-padding;
+    position: relative;
+    @include m.tab {
+        padding-block: m.$section-padding;
+    }
+
+    .map {
+        display: block;
+        width: 80%;
+        // height: 100vh;
+        margin: 0 auto;
+        object-fit: contain;
+        @include m.tab {
+            opacity: 0.5;
+        }
+    }
+
+    &__list {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        counter-reset: area-counter;    //どこから番号を数え始めるか指定（初期化）。
+
+        @include m.tab {
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70%;
+        }
+
+        li {
+            counter-increment: area-counter;    //要素ごとにカウントを進める。
+            h3 {
+                position: relative;
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: -40px;
+                    transform: translateY(-50%);
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: m.$accent-color;
+                }
+
+                &::after {
+                    content: counter(area-counter);     //数字を自動で表示。
+                    position: absolute;
+                    top: 50%;
+                    left: -30px;
+                    transform: translateY(-50%);
+                    color: #fff;
+                }
+
+            }
+            p {
+                text-shadow: 0 1px 5px #FFFFFF;
+                @include m.sp {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 10%;
+        right: 15%;
+        font-size: 1.5rem;
+        text-align: center;
+
+        @include m.tab {
+            right: auto;
+            font-size: 1.3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            text-shadow: 0 1px 5px #FFFFFF;
+        }
+
+        @include m.sp {
+            font-size: 1rem;
+        }
+    }
+}
