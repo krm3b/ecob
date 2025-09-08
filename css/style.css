@@ -736,7 +736,7 @@ footer .back-to-top:hover::after {
 }
 .area .map {
   display: block;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   object-fit: contain;
 }
