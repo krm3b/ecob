@@ -464,7 +464,7 @@ footer .back-to-top:hover::after {
 .mainvisual .background-image .top-text h1 .text1::before {
   content: "";
   position: absolute;
-  background-image: url(../../img/speech-bubble.png);
+  background-image: url(../img/speech-bubble.png);
   background-size: cover;
   bottom: -15px;
   width: 100%;
@@ -611,7 +611,7 @@ footer .back-to-top:hover::after {
   top: 50%;
   left: -6%;
   transform: translateY(-50%);
-  background-image: url(../../img/icon_Check.png);
+  background-image: url(../img/icon_Check.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 20px;
