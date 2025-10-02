@@ -469,11 +469,6 @@ footer .back-to-top:hover {
     width: 50%;
   }
 }
-@media (max-width: 425px) {
-  .mainvisual .background-image .top-text img {
-    width: 100%;
-  }
-}
 .mainvisual .background-image .line-btn {
   position: absolute;
   right: 10%;
