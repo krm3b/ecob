@@ -2,7 +2,7 @@
 
 .work-scene {
     padding-block: m.$section-padding;
-    background: linear-gradient(to bottom, #FFF, m.$base-color);
+    background: linear-gradient(to bottom, m.$main-color, #fff);
     position: relative;
 
     @include m.tab {
@@ -15,11 +15,16 @@
         right: 0;
         width: 90%;
         height: 100%;
-        background-image: url(../img/work-scene_back.jpeg);
+        background-image: url(../img/work-scene_back.webp);
         background-size: cover;
         background-position: center;
         opacity: 0.3;
         z-index: 0;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
     }
 
     &__slick {

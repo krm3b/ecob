@@ -9,12 +9,15 @@
 
     .map {
         display: block;
-        width: 60%;
+        width: 90%;
         // height: 100vh;
         margin: 0 auto;
         object-fit: contain;
         @include m.tab {
             opacity: 0.5;
+        }
+        @include m.sp {
+            margin-block: 100px;
         }
     }
 
@@ -26,9 +29,10 @@
         flex-direction: column;
         gap: 15px;
         counter-reset: area-counter;    //どこから番号を数え始めるか指定（初期化）。
+        width: 50vw;
 
         @include m.tab {
-            top: 40%;
+            top: 35%;
             left: 50%;
             transform: translateX(-50%);
             width: 70%;
@@ -38,6 +42,10 @@
             counter-increment: area-counter;    //要素ごとにカウントを進める。
             h3 {
                 position: relative;
+
+                @include m.sp {
+                    font-size: 1rem;
+                }
                 
                 &::before {
                     content: "";
@@ -49,15 +57,21 @@
                     height: 30px;
                     border-radius: 50%;
                     background-color: m.$accent-color;
+
+                    @include m.sp {
+                        width: 20px;
+                        height: 20px;
+                    }
                 }
 
                 &::after {
                     content: counter(area-counter);     //数字を自動で表示。
                     position: absolute;
                     top: 50%;
-                    left: -30px;
+                    left: -33px;
                     transform: translateY(-50%);
                     color: #fff;
+                    font-size: 0.7rem;
                 }
 
             }
@@ -78,6 +92,7 @@
         text-align: center;
 
         @include m.tab {
+            bottom: 6%;
             right: auto;
             font-size: 1.3rem;
             left: 50%;

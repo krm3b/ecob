@@ -1,0 +1,10 @@
+@use '_mixin' as m;
+
+.voice {
+    padding-block: m.$section-padding;
+    background-color: m.$main-color;
+
+    @include m.tab {
+        padding-block: m.$section-padding;
+    }
+}

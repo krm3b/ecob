@@ -57,10 +57,7 @@ footer {
         position: fixed;
         bottom: 0;
         right: 0;
-        width: 70px;
-        height: 70px;
-        border: 3px m.$line-color solid;
-        background-color: #fff;
+        width: 100px;
         cursor: pointer;
         opacity: 0;
         visibility: hidden;
@@ -69,8 +66,7 @@ footer {
         z-index: 1000;
 
         @include m.tab {
-            width: 40px;
-            height: 40px;
+            width: 60px;
         }
 
         &.is-show {
@@ -80,32 +76,9 @@ footer {
             pointer-events: auto;
         }
 
-        &::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            transform: translate(-50%, -25%) rotate(-45deg);
-            right: 25%;
-            border-top: m.$line-color 3px solid;
-            border-right: m.$line-color 3px solid;
-            width: 15px;
-            height: 15px;
-            transition: all .3s ease;
-
-            @include m.tab {
-                right: 18%;
-                width: 10px;
-                height: 10px;
-            }
-        }
 
         &:hover {
-            background-color: m.$line-color;
-
-            &::after {
-                border-top: #fff 3px solid;
-                border-right: #fff 3px solid;    
-            }
+            opacity: 0.5;
         }
     }
 }

@@ -3,7 +3,7 @@
 .mainvisual {
     .background-image {
         height: 70vh;
-        background-image: url(../img/mainvisual_back.jpeg);
+        background-image: url(../img/mainvisual_back.webp);
         background-repeat: no-repeat;
         background-position: left 50% top 30%;
         background-size: cover;
@@ -48,7 +48,7 @@
                     &::before {
                         content: "";
                         position: absolute;
-                        background-image: url(../img/speech-bubble.png);
+                        background-image: url(../img/speech-bubble.webp);
                         background-size: cover;
                         bottom: -15px;
                         width: 100%;
@@ -58,7 +58,7 @@
                 .text2 {
                     font-size: 1.3rem;
                     @include m.tab {
-                        font-size: clamp(1rem, 4vw, 1.2rem);
+                        font-size: clamp(0.95rem, 4vw, 1.2rem);
                     }
                 }
                 .text3 {
@@ -71,10 +71,10 @@
             }
 
             img {
-                width: 90%;
+                width: 65%;
                 object-fit: cover;
                 @include m.tab {
-                    width: 70%;
+                    width: 50%;
                 }
                 @include m.sp {
                     width: 100%;
