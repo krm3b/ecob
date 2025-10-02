@@ -768,10 +768,16 @@ footer .back-to-top:hover {
   content: counter(area-counter);
   position: absolute;
   top: 50%;
-  left: -33px;
+  left: -30px;
   transform: translateY(-50%);
   color: #fff;
-  font-size: 0.7rem;
+  font-size: 1rem;
+}
+@media (max-width: 425px) {
+  .area__list li h3::after {
+    left: -34px;
+    font-size: 0.7rem;
+  }
 }
 .area__list li p {
   text-shadow: 0 1px 5px #FFFFFF;

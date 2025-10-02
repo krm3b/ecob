@@ -68,10 +68,15 @@
                     content: counter(area-counter);     //数字を自動で表示。
                     position: absolute;
                     top: 50%;
-                    left: -33px;
+                    left: -30px;
                     transform: translateY(-50%);
                     color: #fff;
-                    font-size: 0.7rem;
+                    font-size: 1rem;
+                    
+                    @include m.sp {
+                        left: -34px;
+                        font-size: 0.7rem;
+                    }
                 }
 
             }

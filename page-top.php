@@ -16,20 +16,19 @@ get_header();
                 <div class="top-text">
                     <h1>
                         <span class="text1">家具家電1点からご家族引越しまで対応！<br></span>
-                        <span class="text2">鹿児島県全域から全国、また離島へ<br></span>
-                        <span class="text3">引越＆運搬全般</span>
-                    </h1>
+                        <span class="text2">沖縄の引越！軽トラック1台1万円から<br></span>
+                        <span class="text3">引越＆運搬全般</span>                    </h1>
     
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/mainvisual4.png'); ?>" alt="えこぶ運送と代表の池野亮の写真">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/mainvisual4.webp'); ?>" alt="えこぶ運送と代表の池野亮の写真">
                 </div>
 
                 <div class="line-btn">
                     <div class="speech-bubble">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/icons8-line-144.png'); ?>" alt="LINEのロゴ">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/icons8-line-144.webp'); ?>" alt="LINEのロゴ">
                         <p>で簡単！</p>
                     </div>
                     <div class="btn-wrap">
-                        <a href="https://line.me/R/ti/p/@577lsphy?ts=07211632&oat_content=url" class="contact-btn">
+                        <a href="https://line.me/R/ti/p/@416vuicq" class="contact-btn">
                             <span>お見積もり・お問い合わせはコチラ</span><br>
                             <span>（LINEアプリに遷移します）</span>
                         </a>
@@ -40,15 +39,15 @@ get_header();
             <ul class="banner">
                 <li>
                     <p>家具1点から単身・ご家族のお引越しまで</p>
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/mainvisual1.jpg'); ?>" alt="男性がダンボール荷物を荷台に乗せて運んでいる画像">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/mainvisual1.webp'); ?>" alt="男性がダンボール荷物を荷台に乗せて運んでいる画像">
                 </li>
                 <li>
                     <p>鹿児島から全国へ、沖縄・離島のお引越しも対応</p>
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/mainvisual2.jpg'); ?>" alt="船で荷物を運んでいる画像">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/mainvisual2.webp'); ?>" alt="船で荷物を運んでいる画像">
                 </li>
                 <li>
                     <p>お引越し以外の荷物運搬もお任せ（店舗・イベント対応可）</p>
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/mainvisual3.jpg'); ?>" alt="荷台に荷物を乗せて運んでいる画像">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/mainvisual3.webp'); ?>" alt="荷台に荷物を乗せて運んでいる画像">
                 </li>
             </ul>
 
@@ -122,15 +121,15 @@ get_header();
         <!-- ----------------------------------- -->
         <div class="read-text">
             <div class="img-wrap">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/avatar.png'); ?>" alt="えこぶ運送 代表池野のアバター画像">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/avatar.webp'); ?>" alt="えこぶ運送 代表池野のアバター画像">
             </div>
             <p>
                 <span>価格も！柔軟さも！地元力も！</span><br>
                 <span>全部そろった</span>
-                <span class="line">鹿児島えこぶ運送。</span><br class="sp-br">
+                <span class="line">沖縄えこぶ運送。</span><br class="sp-br">
                 <span>大手にはできないサービスを！</span>
             </p>
-            <img class="logo" src="<?php echo esc_url( get_template_directory_uri() . '/img/icon_logo.png'); ?>" alt="えこぶ運送のアイコンロゴ">
+            <img class="logo" src="<?php echo esc_url( get_template_directory_uri() . '/img/icon_logo.webp'); ?>" alt="えこぶ運送のアイコンロゴ">
         </div>
 
         <!-- ----------------------------------- -->
@@ -143,34 +142,32 @@ get_header();
                     <h2 class="section-title">対応エリア</h2>
                     <p class="explanation">
                         <span>絶賛対応エリア拡大中です！</span>
-                        <span>軽トラック〜3t車、離島は船で運搬します。</span>
-                        <span>※種子島・屋久島・喜界島・奄美大島など（今後追加の可能性あり）</span>
+                        <span>軽トラック〜2t車、離島、本土へは船で運搬します</span>
                     </p>
                 </div>
             </div>
 
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/area1.png'); ?>" class="map" alt="日本地図で鹿児島から全国へ表した画像">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/area1.webp'); ?>" class="map" alt="日本地図で鹿児島から全国へ表した画像">
             <ul class="area__list">
                 <li>
-                    <h3>鹿児島県内</h3>
-                    <p>県内どこでもお任せ！ <br>
-                        ※一部宮崎エリア対応可能 <br>
-                        （都城市、えびの市、小林市、高原町、三股町）
+                    <h3>沖縄県内</h3>
+                    <p>対象：沖縄本島、那覇市、宜野湾市、浦添市、名護市、糸満市、沖縄市、豊見城市、うるま市、南城市、国頭郡、国頭村、大宜味村、東村、今帰仁村、本部町、恩納村、宜野座村、金武町、伊江村、中頭郡、読谷村、嘉手納町、北谷町、北中城村、中城村、西原町、島尻郡、与那原町、南風原町、伊平屋村、伊是名村、八重瀬町
                     </p>
                 </li>
                 <li>
-                    <h3>鹿児島→全国へ</h3>
-                    <p>鹿児島から全国へお届け</p>
+                    <h3>沖縄本島→全国へ（※一部地域）</h3>
+                    <p>沖縄本土から全国へ軽トラック〜2tトラック、船でお届け</p>
                 </li>
                 <li>
-                    <h3>鹿児島↔︎沖縄・離島</h3>
-                    <p>鹿児島から沖縄・離島へ／沖縄・離島から鹿児島へ</p>
+                    <h3>沖縄本島→離島へ</h3>
+                    <p>対象：宮古島、石垣島、久米島（※今後追加の可能性あり）<br>
+                        ※離島→沖縄本島のお引越しも対応可能</p>
                 </li>
             </ul>
 
             <p class="area__text">
-                <span>鹿児島県内から全国、沖縄・離島まで</span> <br>
-                <span>幅広く対応いたします！</span>
+                <span>沖縄県内や離島はもちろん</span> <br>
+                <span>全国まで幅広く対応いたします！</span>
             </p>
         </section>
 
@@ -184,10 +181,10 @@ get_header();
                     <h2 class="section-title">作業風景</h2>
                     <p class="explanation">
                         <span>家具家電は 専用保護材で丁寧に養生・運搬しています。</span><br>
-                        <span>高さ約3mの大容量トラックでお伺いするので、大きな荷物もお任せください！</span><br>
-                        <span>※鹿児島軽貨物自動車運送事業提出済み。</span><br>
+                        <span>高さ約2mの大容量トラックでお伺いするので、大きな荷物もお任せください！</span><br>
+                        <span>※軽貨物自動車運送事業提出済み。</span><br>
                         <span>作業員1〜3名で柔軟に対応いたします。</span><br>
-                        <span>沖縄・神奈川エリアでも運搬代行実績多数いただいています。</span>
+                        <span>鹿児島・神奈川エリアでも運搬代行実績多数いただいています。</span>
                     </p>
                 </div>
             </div>
@@ -219,6 +216,16 @@ get_header();
 
         </section>
         <!-- ----------------------------------- -->
+        <!-- お客様の声                           -->
+        <!-- ----------------------------------- -->
+        <section id="voice" class="voice">
+            <div class="center-wrap">
+                <h2 class="section-title">お客様の声</h2>
+            </div>
+            <?php echo do_shortcode('[trustindex no-registration=google]'); ?>
+        </section>
+
+        <!-- ----------------------------------- -->
         <!-- instagram                           -->
         <!-- ----------------------------------- -->
         <section id="instagram" class="instagram">
@@ -232,7 +239,7 @@ get_header();
                     </p>
                 </div>
                 
-                <?php echo do_shortcode('[instagram-feed]'); ?>
+                <?php echo do_shortcode('[instagram-feed feed=2]'); ?>
 
             </div>
 
@@ -249,11 +256,11 @@ get_header();
                 <div class="contact__flex">
                     <div class="line-btn">
                         <div class="speech-bubble">
-                            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/icons8-line-144.png'); ?>" alt="LINEのロゴ">
+                            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/icons8-line-144.webp'); ?>" alt="LINEのロゴ">
                             <p>で簡単！</p>
                         </div>
                         <div class="btn-wrap">
-                            <a href="https://line.me/R/ti/p/@577lsphy?ts=07211632&oat_content=url" class="contact-btn">
+                            <a href="https://line.me/R/ti/p/@416vuicq" class="contact-btn">
                                 <span>お見積もり・お問い合わせはコチラ<br></span>
                                 <span>（LINEアプリに遷移します）</span>
                             </a>
@@ -262,9 +269,9 @@ get_header();
     
                     <div class="line-qr">
                         <p>上記で友達追加できない場合は、<br>
-                            <span>「＠289boxwu」</span> <br>
+                            <span>「@416vuicq」</span> <br>
                             をID検索　または右記のQRコードから「友達追加」をしてください。</p>
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/QR.png'); ?>" alt="LINEのQRコード">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/QR.webp'); ?>" alt="LINEのQRコード">
                     </div>
     
     
@@ -272,8 +279,8 @@ get_header();
                         <p class="tel-text">電話をかける</p>
                         <a href="tel:+819024579422">
                             <span class="icon">
-                                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/icon_Phone.png'); ?>" class="black" alt="電話のロゴ">
-                                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/icon_Phone_white.png'); ?>" class="white" alt="電話のロゴ">
+                                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/icon_Phone.webp'); ?>" class="black" alt="電話のロゴ">
+                                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/icon_Phone_white.webp'); ?>" class="white" alt="電話のロゴ">
                             </span>
                             <div class="tel-num">
                                 <p>090-2457-9422</p>
@@ -294,6 +301,7 @@ get_header();
         <!-- ----------------------------------- -->
         <!-- company                             -->
         <!-- ----------------------------------- -->
+        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/wave.svg'); ?>" class="black" alt="波の模様">
         <section id="company" class="company">
             <div class="container">
 
@@ -303,7 +311,7 @@ get_header();
 
                 <div class="company__flex">
                     <div class="company__flex--img">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/company.jpg'); ?>" alt="えこぶ運送の代表池野亮の画像">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/company.webp'); ?>" alt="えこぶ運送の代表池野亮の画像">
                     </div>
 
                     <table class="company__flex--info">
@@ -317,8 +325,8 @@ get_header();
                                 <td class="descriptor"><?php echo nl2br(get_field('head_office')); ?></td>
                             </tr>
                             <tr>
-                                <td class="label">鹿児島営業所</td>
-                                <td class="descriptor"><?php echo nl2br(get_field('kagoshima_office')); ?></td>
+                                <td class="label">倉庫</td>
+                                <td class="descriptor"><?php echo nl2br(get_field('warehouse')); ?></td>
                             </tr>
                             <tr>
                                 <td class="label">電話</td>
@@ -352,7 +360,10 @@ get_header();
                             </tr>
                         </tbody>
                     </table>
-
+                    <div class="payment">
+                        <p>決済方法</p>
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/payment.webp'); ?>" class="black" alt="決済方法の画像">
+                    </div>
                 </div>
 
             </div>
